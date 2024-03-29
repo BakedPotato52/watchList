@@ -1,0 +1,98 @@
+/*FeedBack*/
+.title {
+    font-size: 1.18rem;
+}
+
+.Rating {
+    margin-top: 1rem;
+}
+
+.head {
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    margin-left: 0.25rem;
+}
+
+input[type="radio"] {
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, .1);
+    outline: none;
+    transition: all .2s ease;
+    vertical-align: middle;
+}
+
+input[name]:checked+label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 999px;
+    background-color: #c0d8e4;
+    transform: scale(1);
+    transition: all .2s cubic-bezier(.25, .46, .45, .94) .08s;
+}
+
+input[disabled]+label::before {
+    filter: saturate(50%) grayscale(100%/90);
+    opacity: .666;
+}
+
+#overall-experience-1:checked~.hidden-for-sighted {
+    display: block;
+    /* Make the hidden span visible for screen readers */
+}
+
+.hidden-for-sighted {
+    /* Same styles as the Tailwind .sr-only class  */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sronly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.content {
+
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+
+@media (max-width: 1024px) {
+    .Card {
+        width: 100%;
+        max-width: 32rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

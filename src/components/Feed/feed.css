@@ -1,0 +1,99 @@
+/* For grid */
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+    /* For gap-4 */
+    padding: 1rem;
+    /* For p-4 */
+}
+
+.content {
+    grid-gap: 0.5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.link {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.thumbnail {
+    display: flex;
+    aspect-ratio: 16/9;
+    align-items: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.vedio {
+
+    width: 100%;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.description {
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+}
+
+.vedio-title {
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.views {
+    font-size: 0.86rem;
+    color: #718096;
+}
+
+/* For medium screens and above */
+@media (min-width: 768px) {
+    .grid {
+        grid-gap: 2rem;
+        /* For md:gap-8 */
+        padding: 1.5rem;
+        /* For md:p-6 */
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        /* Equivalent to xl:grid-cols-3 in Tailwind CSS */
+    }
+}

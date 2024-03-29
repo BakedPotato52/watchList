@@ -1,0 +1,150 @@
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 3px;
+  align-items: center;
+}
+
+.nav svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  fill: rgba(90, 87, 87, 0.89);
+  margin-right: 8px;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  top: 0%;
+  right: 40px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
+.topnav button[type='submit'] {
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  background-color: #858a8d;
+  flex: 1;
+}
+
+
+
+/*.navbar_Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}*/
+
+.Search {
+  display: flex;
+  height: 2rem;
+  width: auto;
+  margin: 0 0 0 40px;
+  padding: 0 4px;
+  flex: 1;
+  flex-basis: 1e-9px;
+  background-origin: padding-box;
+  border-radius: 2rcap;
+}
+
+.search-input {
+  border-radius: 5%;
+}
+
+.Search button {
+  height: 2rem;
+  width: 3.5rem;
+  cursor: pointer;
+  display: inline;
+  border: 1px solid black;
+  background-color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+.Search button:hover {
+  background-color: #858a8d;
+  cursor: pointer;
+
+}
+
+
+/* Style the search box inside the navigation bar */
+.Search input[type=text] {
+  float: left;
+  padding: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+  width: 300px;
+  font-size: 12px;
+}
+
+/* Light theme */
+.nav.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark theme */
+.nav.dark {
+  background-color: #201d1d;
+  color: #ffffff;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 450px) {
+
+  .topnav input[type=text] {
+    float: none;
+    display: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #8b8383;
+  }
+
+  .Search,
+  .Search button {
+    font-size: 0.8em;
+
+    /* Make the search box smaller on small screens */
+  }
+
+  .Search {
+    margin-left: 1px;
+    float: center;
+    clear: both;
+    width: 10rem;
+    justify-content: flex-start;
+  }
+
+  .Search input[type=text] {
+    width: 50px;
+  }
+
+}
