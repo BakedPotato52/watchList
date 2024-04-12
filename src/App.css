@@ -1,0 +1,26 @@
+/*App.css*/
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100vw;
+  height: 100vw;
+  background-color: #e7d9dc
+}
+
+.App {
+  width: 100vw;
+  height: 100vw;
+
+}
+
+.container {
+  display: flex;
+}
+
+
+
+.sidebar {
+  height: 100% !important;
+  min-width: 35% !important;
+  max-width: 420px !important;
+}

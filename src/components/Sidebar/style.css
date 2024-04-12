@@ -1,0 +1,63 @@
+.container {
+    background-color: #1d1a39;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    animation: showSidebar 0.5s;
+    box-shadow: 0 0 20px 3px;
+
+}
+
+.sidebarList {
+    height: auto;
+    padding: 0%;
+    width: 200px;
+}
+
+.sidebarList .row {
+    height: 65px;
+    width: 200px;
+    background-color: #1d1a39;
+
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: visible;
+}
+
+.sidebarList :hover {
+    background-color: #e8bcb9;
+    color: black;
+    font-weight: 600;
+}
+
+.row #icons {
+    flex: 20%;
+    display: flex;
+    place-items: center;
+    color: white;
+}
+
+.row #title {
+    flex: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container.closed {
+    left: -100%;
+}
+
+.container svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+}
