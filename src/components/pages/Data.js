@@ -12,6 +12,7 @@ export const Data = [
         videoTitle: 'Video 1',
         Description: 'This is the description of video 1',
         Time: '2022-01-01',
+        videoSRC: { SampleVideo },
         Views: '20M views',
         additionalData: 'Additional data for video 1',
     },

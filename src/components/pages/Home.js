@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
 
-        <main className="grid gap-4 grid-cols-2 -z-50">
+        <main className="grid gap-4 -z-50">
 
             <Feed />
         </main>
