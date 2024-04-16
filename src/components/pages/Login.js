@@ -3,7 +3,7 @@ import favicon from '../images/favicon.ico'
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const SignUp = () => {
+const Login = () => {
     async function handleSubmit(e) {
         e.preventDefault()
 
@@ -74,10 +74,10 @@ const SignUp = () => {
                         <div className="flex items-center justify-center sm:flex-row">
                             <Link
                                 type="submit"
-                                to={`/login`}
+                                to={`/SignUp`}
                                 className="flex sm:flex-row w-1/3 mr-6 items-center justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Login
+                                Sign Up
                             </Link>
                             <span>OR</span>
                             <button
@@ -85,7 +85,7 @@ const SignUp = () => {
                                 className="flex ml-6 sm:flex-row w-1/3 items-center justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 onClick={() => handleSubmit}
                             >
-                                Sign Up
+                                Login
                             </button>
                         </div>
                     </form>
@@ -94,4 +94,4 @@ const SignUp = () => {
         </>
     )
 }
-export default SignUp
+export default Login

@@ -45,7 +45,7 @@ const VideoPage = () => {
                         {Data.map((video) => (
                             <div key={video.id} className="bg-transparent p-4">
                                 <div className="space-y-4">
-                                    <Link to={`/Video/${video.id}`} className="space-y-4">
+                                    <Link to={`/video/${video.id}`} className="space-y-4">
                                         <div className="flex space-x-2 sm:flex-row">
                                             <img
                                                 src={video.thumbnail}

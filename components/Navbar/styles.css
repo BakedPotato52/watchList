@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #f39f58;
+  background-color: #ffffff;
   box-shadow: 0 0 20px 3px;
   align-items: center;
 }
@@ -108,21 +108,22 @@
 
 /* Light theme */
 .nav.light {
-  background-color: #f39f58;
+  background-color: #428599;
   box-shadow: 0 0 20px 3px;
   color: #000000;
+}
+
+nav.light svg {
+  color: #000;
 }
 
 /* Dark theme */
 .nav.dark {
-  background-color: #451952;
+  background-color: #000000;
   box-shadow: 0 0 20px 3px;
   color: #000000;
 }
 
-.nav.dark svg {
-  color: white
-}
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 517px) {

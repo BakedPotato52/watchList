@@ -16,7 +16,7 @@ export const Feed = () => {
                     {Data.map((video) => (
 
                         <div key={video.id}>
-                            <Link to={`/video?/${video.id}`} className="link"> {/*href={() => (window.location.pathname = video.videoSRC)} */}
+                            <Link to={`/Video/${video.id}`} className="link"> {/*href={() => (window.location.pathname = video.videoSRC)} */}
                                 <div className="thumbnail" onClick={() => {
                                     console.log('CardContent clicked');
                                 }}>

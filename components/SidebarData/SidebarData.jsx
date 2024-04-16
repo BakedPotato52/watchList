@@ -14,7 +14,7 @@ export const SidebarData = [
     {
         title: "Home",
         icons: <BsFillHouseDoorFill />,
-        links: "/Home",
+        links: "/",
     },
     {
         title: "History",

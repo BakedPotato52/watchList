@@ -6,8 +6,6 @@ import {
 } from 'react-icons/fa';
 import Sidebar from '../Sidebar/Sidebar';
 
-import 'reactjs-popup/dist/index.css';
-
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import SearchBox from './SearchBar';
 
@@ -35,7 +33,7 @@ const Navbar = () => {
   return (
     <header className="alm">
       <nav className={`nav ${isDarkMode ? 'dark' : 'light'}`}>
-        <FaBars onClick={showSidebar} />
+        <FaBars className='w-6 h-6 mr-4 align-middle' onClick={showSidebar} />
         {sidebar && <Sidebar active={setSidebar} />}
 
         <SearchBox />
