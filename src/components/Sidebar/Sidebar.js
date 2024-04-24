@@ -15,7 +15,7 @@ const Sidebar = ({ active }) => {
 
     return (
         <>
-            <div className="container">
+            <div className="cont">
                 <div className="Sidebar">
                     <FaTimes onClick={closeSidebar} />
                     <ul className='sidebarList'>

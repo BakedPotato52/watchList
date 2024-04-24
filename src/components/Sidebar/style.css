@@ -1,4 +1,4 @@
-.container {
+.cont {
     background-color: #1d1a39;
     position: fixed;
     height: 100%;
@@ -7,7 +7,7 @@
     width: 200px;
     animation: showSidebar 0.5s;
     box-shadow: 0 0 20px 3px;
-
+    z-index: 100;
 }
 
 .sidebarList {
@@ -51,11 +51,11 @@
     overflow: hidden;
 }
 
-.container.closed {
+.cont.closed {
     left: -100%;
 }
 
-.container svg {
+.cont svg {
     width: 24px;
     height: 24px;
     margin-left: 24px;

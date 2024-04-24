@@ -31,7 +31,7 @@ const Navbar = () => {
   //  const toggleSignup = () => setSignupVisible(!signupVisible);
 
   return (
-    <header className="alm">
+    <header className="z-[100]">
       <nav className={`nav ${isDarkMode ? 'dark' : 'light'}`}>
         <FaBars className='w-6 h-6 mr-4 align-middle' onClick={showSidebar} />
         {sidebar && <Sidebar active={setSidebar} />}
