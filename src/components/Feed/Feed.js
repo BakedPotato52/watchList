@@ -2,49 +2,37 @@ import React from 'react';
 import '../pages/pages.css';
 import './feed.css'
 import { Data } from '../pages/Data';
-
-import { Link } from 'react-router-dom'
-
-
+import { Link } from 'react-router-dom';
 
 export const Feed = () => {
     return (
-        <main className="grid">
-            <div className="content">
-                <h1 className='text-4xl font-bold pb-5'>Videos</h1>
-                <div className="cards"> {/* Add a class name for styling */}
+        <div className="grid">
+            <div className="gap-2 p-6 h-auto bg-gradient-to-br from-[#f16f66] to-[#0066ff]">
+                <h1 className='text-4xl font-bold pb-6'>Videos</h1>
+
+
+                <div className="grid gap-4 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {Data.map((video) => (
-
                         <div key={video.id}>
-                            <Link to={`/Video/${video.id}`} className="link"> {/*href={() => (window.location.pathname = video.videoSRC)} */}
-                                <div className="thumbnail" onClick={() => {
-                                    console.log('CardContent clicked');
-                                }}>
+                            <Link to={`/Video/${video.id}`} className="rounded-lg block"> {/*href={() => (window.location.pathname = video.videoSRC)} */}
+                                <div className="group relative aspect-video overflow-hidden rounded-lg">
                                     <img
-                                        alt="Thumbnail"
-                                        className="vedio"
-                                        height={720}
+                                        alt="Pop Music"
+                                        className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                                         src={video.thumbnail}
-                                        width={1280}
                                     />
-                                </div>
-                                <div className="card-content">
-                                    <div className="vedio-title">
-                                        {video.videoTitle}
-                                        <div className="description">
-                                            {video.Views} &bull;
-                                            {video.Time}
-                                        </div>
-
+                                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/70 p-6 transition-opacity duration-300 group-hover:opacity-100">
+                                        <h3 className="text-2xl font-bold text-white">{video.videoTitle}</h3>
+                                        <p className="mt-2 text-gray-300">{video.Views} &bull; {video.Time}</p>
                                     </div>
                                 </div>
                             </Link>
-                        </div >
-
+                        </div>
                     ))}
                 </div>
+
             </div>
-        </main >
+        </div>
     );
 };
 

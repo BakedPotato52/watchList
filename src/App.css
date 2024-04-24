@@ -2,14 +2,14 @@
 body {
   margin: 0%;
   padding: 0%;
-  width: 100vw;
-  height: 100vw;
-  background-color: #e7d9dc
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #ffffff
 }
 
 .App {
-  width: 100vw;
-  height: 100vw;
+  width: 100dvw;
+  height: 100dvh;
 
 }
 

@@ -9,11 +9,14 @@ import Settings from './components/pages/Settings'
 import BugReport from './components/pages/ReportBugs'
 import Feedback from './components/pages/Feedback'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Signup from './components/pages/Sign-up'
+import Signup from './components/Registration/Sign-up'
+import Login from './components/Registration/Login'
+import ForgetPassword from './components/Registration/ForgetPassword';
 
 
 
 function App() {
+
   return (
     <div className="app">
       <Navbar />
@@ -29,6 +32,8 @@ function App() {
           <Route exact path="/bugreport" element={<BugReport />} />
           <Route exact path="/feedback" element={<Feedback />} />
           <Route exact path="/Signup" element={<Signup />} />
+          <Route exact path="/Login" element={<Login />} />
+          <Route exact path="/ForgetPassword" element={<ForgetPassword />} />
           {/* Add more routes for other pages if needed */}
         </Routes>
       </Router>

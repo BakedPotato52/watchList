@@ -4,13 +4,16 @@ import { FaSearch } from 'react-icons/fa';
 import './styles.css';
 
 
+
 function SearchBox() {
     const [searchQuery, setSearchQuery] = useState(''); // State for the search query
 
     // Function to handle input change
     const handleInputChange = (event) => {
+
+        setSearchQuery(event.target.value);
         console.log('Input changed:', event.target.value); // This line will log the entered value
-        setSearchQuery(event.target.value); // Update searchQuery state with the input value
+        // Update searchQuery state with the input value
     };
 
     // Function to handle form submission
